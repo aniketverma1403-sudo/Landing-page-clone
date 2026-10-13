@@ -20,7 +20,6 @@ export default function Footer(): React.JSX.Element {
       id="footer"
     >
       <div className="mx-auto grid w-full max-w-350 grid-cols-1 items-start gap-10 px-6 sm:px-8 md:grid-cols-[minmax(0,1.28fr)_minmax(0,0.64fr)_minmax(0,0.96fr)_minmax(0,1.12fr)] md:gap-3 md:px-[4%] lg:gap-10 lg:px-[6%]">
-        {/* Brand Info */}
         <div className="flex flex-col items-center text-center md:items-start md:text-left">
           <div className="mb-5 md:mb-6">
             <h2 className="m-0 font-serif text-[38px] font-light leading-[1.3] tracking-[-0.5px] text-[#2c2a29] sm:text-[42px] lg:text-[46px] lg:leading-normal">
@@ -39,7 +38,6 @@ export default function Footer(): React.JSX.Element {
           </p>
         </div>
 
-        {/* Navigate */}
         <div className="flex flex-col">
           <h3 className="m-0 mb-5 text-[10.5px] font-semibold uppercase tracking-[1.5px] text-[#7D756D] md:mb-5">
             NAVIGATE
@@ -81,7 +79,6 @@ export default function Footer(): React.JSX.Element {
           </ul>
         </div>
 
-        {/* Contact — appears before Our Team on mobile */}
         <div className="order-3 flex flex-col md:order-4">
           <h3 className="m-0 mb-5 text-[10.5px] font-semibold uppercase tracking-[1.5px] text-[#7D756D] md:mb-5">
             CONTACT
@@ -117,7 +114,6 @@ export default function Footer(): React.JSX.Element {
           </div>
         </div>
 
-        {/* Our Team */}
         <div className="order-4 flex flex-col md:order-3">
           <h3 className="m-0 mb-5 text-[10.5px] font-semibold uppercase tracking-[1.5px] text-[#7D756D] md:mb-5">
             OUR TEAM
@@ -138,7 +134,6 @@ export default function Footer(): React.JSX.Element {
         </div>
       </div>
 
-      {/* Bottom Accent Bar */}
       <div className="mt-12 bg-[#83b9bc] px-6 py-6 sm:px-8 md:mt-20 md:px-[4%] md:py-6 lg:px-[6%]">
         <div className="mx-auto flex w-full max-w-350 flex-col items-start gap-2 md:flex-row md:items-center md:justify-between md:gap-6">
           <p className="m-0 text-[11px] leading-[1.9] tracking-[0.3px] text-white sm:text-[11.5px] md:tracking-[0.5px]">

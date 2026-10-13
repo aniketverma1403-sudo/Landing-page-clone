@@ -5,21 +5,16 @@ export default function WhoWeHelp(): React.JSX.Element {
     <section className="w-full bg-[#FFFFFF] py-24 px-[6%] box-border" id="services">
       <div className="w-full max-w-[1400px] mx-auto flex flex-col">
         
-        {/* Section Heading with Left-Aligned Script Accent */}
         <h2 className="font-serif text-[34px] font-normal text-[#2C2A29] mb-12 tracking-tight md:text-[38px] lg:text-[42px] lg:mb-16">
           Who we <span className="italic text-[#83B9BC] font-normal text-[44px] md:text-[48px] lg:text-[52px]" style={{ fontFamily: "'PrintedMoments', 'Cormorant Garamond', serif" }}>help</span>
         </h2>
 
-        {/* Layout wrapper creating empty space on the left and shifting cards right */}
         <div className="w-full grid grid-cols-1 md:grid-cols-12 gap-8">
           
-          {/* Empty spacer column on the left */}
           <div className="hidden md:block md:col-span-1" />
 
-          {/* Cards container shifted right spanning 11 columns */}
           <div className="md:col-span-11 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
             
-            {/* Card 1: Adults */}
             <div className="flex flex-col max-w-[360px]">
               <div className="w-full aspect-square mb-6 overflow-hidden">
                 <img
@@ -36,7 +31,6 @@ export default function WhoWeHelp(): React.JSX.Element {
               </p>
             </div>
 
-            {/* Card 2: Couples */}
             <div className="flex flex-col max-w-[360px]">
               <div className="w-full aspect-square mb-6 overflow-hidden">
                 <img
@@ -53,7 +47,6 @@ export default function WhoWeHelp(): React.JSX.Element {
               </p>
             </div>
 
-            {/* Card 3: Children & Teens */}
             <div className="flex flex-col max-w-[360px]">
               <div className="w-full aspect-square mb-6 overflow-hidden">
                 <img

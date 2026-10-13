@@ -5,7 +5,6 @@ export default function AboutSection(): React.JSX.Element {
     <section className="w-full bg-[#F4F1EC] py-16 lg:pt-32 lg:pb-24 overflow-hidden box-border" id="about">
       <div className="w-full flex flex-col md:flex-row items-center justify-between gap-8 md:gap-10 lg:gap-0 m-0 p-0">
         
-        {/* Left Column (Text area) */}
         <div className="w-full px-6 md:w-[58%] md:max-w-[58%] md:px-0 md:pl-[6%] md:pr-4 lg:w-[62%] lg:max-w-[900px] lg:pl-[8%] lg:pr-6 flex flex-col justify-center lg:pt-4">
           <h2 className="font-serif text-[30px] sm:text-[34px] md:text-[36px] lg:text-[42px] font-normal leading-[1.2] text-[#2C2A29] mb-8 lg:mb-12">
             You’re holding onto hope that life can be <br className="hidden md:block" />
@@ -30,7 +29,6 @@ export default function AboutSection(): React.JSX.Element {
           </div>
         </div>
 
-        {/* Right Column (Image touching right edge on desktop, full width on mobile) */}
         <div className="order-2 w-full px-4 md:w-[42%] md:max-w-[42%] md:p-0 lg:w-[35%] lg:max-w-[35%] shrink-0 m-0">
           <img
             src="/images/Ocean.jpg"

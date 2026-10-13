@@ -7,7 +7,6 @@ export default function ScheduleAppointment(): React.JSX.Element {
       className="relative w-full max-w-full overflow-hidden bg-[#F4F1EC] py-12 sm:py-16 md:py-[100px]"
     >
       <div className="mx-auto flex w-full max-w-[1440px] flex-col items-stretch gap-8 sm:gap-10 md:flex-row md:items-end md:justify-between md:gap-0">
-        {/* 1. Smaller Image: Left Aligned on Mobile */}
         <div className="relative order-1 w-[65%] self-start sm:w-[55%] md:w-[20%] md:shrink-0">
           <img
             src="/images/blurhand.jpg"
@@ -16,7 +15,6 @@ export default function ScheduleAppointment(): React.JSX.Element {
           />
         </div>
 
-        {/* 2. Appointment Text and Button */}
         <div className="relative order-2 flex w-full flex-col px-5 sm:px-8 md:px-12 md:w-[50%] md:shrink-0 md:basis-[50%] md:px-[4%]">
           <p className="mb-4 font-sans text-[10px] font-medium uppercase tracking-[2px] text-[#716E68] sm:text-[11px]">
             SCHEDULE AN APPOINTMENT
@@ -49,7 +47,6 @@ export default function ScheduleAppointment(): React.JSX.Element {
             <p>Click the button below to schedule an appointment.</p>
           </div>
 
-          {/* Book Now Button */}
           <div>
             <a
               href="#booking"
@@ -60,7 +57,6 @@ export default function ScheduleAppointment(): React.JSX.Element {
           </div>
         </div>
 
-        {/* 3. Bigger Hands Image: Immediately Below Book Now on Mobile */}
         <div className="relative order-3 ml-auto w-[82%] self-end sm:w-[75%] md:w-[30%] md:shrink-0 md:basis-[30%]">
           <img
             src="/images/holdhands.jpg"

@@ -63,7 +63,6 @@ export default function Header(): React.JSX.Element {
   return (
     <>
       <header className="relative z-50 box-border flex min-h-[96px] w-full items-center justify-between gap-4 bg-[#F4F1EC] px-6 py-4 md:min-h-[108px] lg:min-h-[120px] lg:px-[5.8%] lg:py-4">
-        {/* Brand / Logo */}
         <a
           href="#home"
           onClick={closeMobileMenu}
@@ -78,7 +77,6 @@ export default function Header(): React.JSX.Element {
           </span>
         </a>
 
-        {/* Desktop Navigation with hover and keyboard-accessible dropdowns */}
         <nav
           className="hidden items-center justify-end gap-3 pt-0 md:flex xl:gap-7"
           aria-label="Main navigation"
@@ -123,7 +121,6 @@ export default function Header(): React.JSX.Element {
           </a>
         </nav>
 
-        {/* Mobile Hamburger / Close Button */}
         <button
           type="button"
           onClick={() => setIsMobileMenuOpen((open) => !open)}
@@ -150,7 +147,6 @@ export default function Header(): React.JSX.Element {
         </button>
       </header>
 
-      {/* Mobile Navigation: tap a section to expand its submenu */}
       <div
         id="mobile-navigation"
         className={`fixed inset-0 z-[60] flex flex-col bg-[#F4F1EC] transition-all duration-300 lg:hidden ${

@@ -5,7 +5,6 @@ export default function HonoringSection(): React.JSX.Element {
     <section className="w-full bg-[#F4F1EC] py-12 md:py-20 box-border overflow-hidden" id="honoring">
       <div className="w-full flex flex-col md:flex-row items-stretch justify-between gap-8 md:gap-20 m-0 p-0">
         
-        {/* Left Column: Image container (Appears at the top on mobile, left side on desktop) */}
         <div className="w-full md:w-[52%] shrink-0 m-0 p-0 order-1 md:order-1">
           <img
             src="/images/projectpic.jpg"
@@ -14,7 +13,6 @@ export default function HonoringSection(): React.JSX.Element {
           />
         </div>
 
-        {/* Right Column: Heading text (Appears below image on mobile, right side aligned to bottom on desktop) */}
         <div className="w-full md:flex-1 flex flex-col justify-center md:justify-end px-6 sm:px-10 md:px-0 md:pr-[6%] md:pb-[20px] order-2 md:order-2">
           <h2 className="m-0 font-serif text-[26px] sm:text-[30px] md:text-[32px] font-normal leading-[1.25] text-[#2C2A29] md:text-[34px]">
             Honoring where you’ve been{" "}

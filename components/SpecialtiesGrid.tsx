@@ -32,7 +32,6 @@ export default function SpecialtiesGrid(): React.JSX.Element {
     <section className="bg-white py-[120px] px-[6%] w-full box-border" id="specialties">
       <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-[35%_65%] gap-[60px] items-start">
         
-        {/* Left Column: Sticky Heading */}
         <div className="sticky top-[120px]">
           <h2 className="font-serif text-[36px] font-normal leading-[1.15] text-[#2C2A29] md:text-[40px] lg:text-[44px]">
             Our <span className="italic text-[#83B9BC] font-normal text-[42px] md:text-[46px] lg:text-[52px]" style={{ fontFamily: "'PrintedMoments', 'Cormorant Garamond', serif" }}>specialities</span> <br />
@@ -40,7 +39,6 @@ export default function SpecialtiesGrid(): React.JSX.Element {
           </h2>
         </div>
 
-        {/* Right Column: 2-Column Specialties Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[40px]">
           {specialties.map((item, index) => (
             <div key={index} className="flex flex-col justify-between h-full p-[40px] box-border">
