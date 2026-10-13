@@ -30,12 +30,12 @@ export default function Hero(): React.JSX.Element {
       </div>
 
       {/* Center: Main Text Content */}
-      <div className="relative z-10 order-1 flex min-w-0 flex-1 flex-col px-6 py-10 sm:px-10 lg:order-2 lg:min-h-[570px] lg:px-8 lg:py-12 xl:px-12">
-        <p className="mb-8 max-w-[440px] text-[10px] font-medium uppercase leading-[1.8] tracking-[2px] text-[#716E68] sm:text-xs lg:mb-6">
+      <div className="relative z-10 order-1 flex min-w-0 flex-1 flex-col px-6 py-10 sm:px-10 lg:order-2 lg:min-h-[570px] lg:pb-0 lg:pl-14 lg:pr-8 lg:pt-0 xl:pl-20 xl:pr-12">
+        <p className="mb-8 max-w-[440px] text-[10px] font-medium uppercase leading-[1.8] tracking-[2px] text-[#716E68] sm:text-xs lg:mb-0">
           ONLINE &amp; IN-PERSON COUNSELING IN NEWBURY PARK &amp; ACROSS CA
         </p>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col lg:flex-1 lg:justify-end lg:pb-5">
           <h1 className="mb-6 font-serif text-[34px] font-normal leading-[1.15] tracking-[-1px] text-[#2C2A29] sm:text-[42px] lg:text-[40px] xl:text-[48px]">
             Rebuild your foundation on
             <br className="hidden md:block" /> solid ground and finally begin
@@ -46,13 +46,13 @@ export default function Hero(): React.JSX.Element {
             .
           </h1>
 
-          <p className="mb-8 max-w-[560px] text-[14px] leading-[1.8] text-[#62615E] sm:text-[15px] lg:mb-10">
+          <p className="mb-5 max-w-[560px] text-[14px] leading-[1.8] text-[#62615E] sm:text-[15px] lg:mb-5">
             Specialized therapy for adults, couples, teens, and children to
             reflect, heal, and grow.
           </p>
         </div>
 
-        <div className="mt-auto pb-2 lg:pb-0">
+        <div className="mt-0 pb-2 lg:pb-0">
           <a
             href="#contact"
             className="inline-block border-b-2 border-[#30302E] pb-[4px] text-[11px] font-semibold uppercase tracking-[2px] text-[#30302E] transition-colors duration-200 hover:border-[#83B9BC] hover:text-[#83B9BC]"

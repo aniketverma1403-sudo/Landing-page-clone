@@ -22,7 +22,7 @@ export default function AboutSection(): React.JSX.Element {
               </p>
             </div>
 
-            <div className="flex flex-col justify-end">
+            <div className="hidden lg:flex lg:flex-col lg:justify-end">
               <p className="text-[#62605B] text-[15px] leading-[1.7]">
                 First and foremost, we believe what you&apos;re going through is real, valid, and worthy of support. Our team offers clients in the Newbury Park area and across CA an environment to discover a new life and a deeper sense of self in the midst of their struggles. As we tap into the power of connection and understanding, you can find your footing again and take a transformative path forward.
               </p>
@@ -31,16 +31,19 @@ export default function AboutSection(): React.JSX.Element {
         </div>
 
         {/* Right Column (Image touching right edge on desktop, full width on mobile) */}
-        
-<div className="w-full lg:w-[35%] shrink-0 p-4 sm:p-5 lg:p-0 m-0">
-  <img
-    src="/images/ocean.jpg"
-    alt="Calm ocean waves meeting sandy beach"
-    className="block w-full h-[320px] sm:h-[420px] lg:h-[580px] object-cover rounded-none"
-  />
-</div>
+        <div className="order-2 w-full lg:w-[35%] shrink-0 p-4 sm:p-5 lg:p-0 m-0">
+          <img
+            src="/images/ocean.jpg"
+            alt="Calm ocean waves meeting sandy beach"
+            className="block w-full h-[320px] sm:h-[420px] lg:h-[580px] object-cover rounded-none"
+          />
+        </div>
 
-
+        <div className="order-3 w-full px-6 pb-2 text-[#62605B] text-[15px] leading-[1.7] lg:hidden">
+          <p>
+            First and foremost, we believe what you&apos;re going through is real, valid, and worthy of support. Our team offers clients in the Newbury Park area and across CA an environment to discover a new life and a deeper sense of self in the midst of their struggles. As we tap into the power of connection and understanding, you can find your footing again and take a transformative path forward.
+          </p>
+        </div>
       </div>
     </section>
   );

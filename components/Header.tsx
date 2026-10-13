@@ -1,24 +1,68 @@
-
 "use client";
 
 import React, { useState } from "react";
 
 const navLinks = [
   { label: "ABOUT", href: "#about" },
-  { label: "OUR TEAM", href: "#team" },
-  { label: "SPECIALTIES", href: "#specialties" },
-  { label: "METHODS", href: "#methods" },
+  {
+    label: "OUR TEAM",
+    href: "#team",
+    submenu: [
+      { label: "Jennifer Anderson LMFT", href: "#jennifer-anderson" },
+      { label: "Candice Balestrieri MFT", href: "#candice-balestrieri" },
+      { label: "Heather Williamson Bogart AMFT", href: "#heather-williamson-bogart" },
+      { label: "Samantha Johnson", href: "#samantha-johnson" },
+      { label: "Otman Bodily AMFT", href: "#otman-bodily" },
+      { label: "Rosa Gomez AMFT", href: "#rosa-gomez" },
+      { label: "Chad Flores AMFT", href: "#chad-flores" },
+      { label: "Simran Sidhu AMFT", href: "#simran-sidhu" },
+      { label: "Jessica Jorregui MA AMFT", href: "#jessica-jorregui" },
+    ],
+  },
+  {
+    label: "SPECIALTIES",
+    href: "#specialties",
+    submenu: [
+      { label: "Dissociation", href: "#dissociation" },
+      { label: "Trauma", href: "#trauma" },
+      { label: "Special Needs", href: "#special-needs" },
+      { label: "Parenting", href: "#parenting" },
+      { label: "Couples", href: "#couples" },
+      { label: "Children & Teens", href: "#children-and-teens" },
+      { label: "Anxiety", href: "#anxiety" },
+      { label: "Depression", href: "#depression" },
+      { label: "Adoption", href: "#adoption" },
+    ],
+  },
+  {
+    label: "METHODS",
+    href: "#methods",
+    submenu: [
+      { label: "EMDR", href: "#emdr" },
+      { label: "Brainspotting", href: "#brainspotting" },
+      { label: "Somatic Therapy", href: "#somatic-therapy" },
+      { label: "Parts Work Therapy", href: "#parts-work-therapy" },
+    ],
+  },
   { label: "FAQS", href: "#faqs" },
 ];
 
 export default function Header(): React.JSX.Element {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [expandedMobileMenu, setExpandedMobileMenu] = useState<string | null>(null);
 
-  const closeMobileMenu = () => setIsMobileMenuOpen(false);
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+    setExpandedMobileMenu(null);
+  };
+
+  const toggleMobileSubmenu = (label: string) => {
+    setExpandedMobileMenu((current) => (current === label ? null : label));
+  };
 
   return (
     <>
-      <header className="relative z-50 flex min-h-[110px] w-full items-center justify-between gap-4 bg-[#F4F1EC] px-6 py-5 box-border lg:min-h-[150px] lg:px-[5.8%] lg:py-7">
+      <header className="relative z-50 box-border flex min-h-[96px] w-full items-center justify-between gap-4 bg-[#F4F1EC] px-6 py-4 lg:min-h-[120px] lg:px-[5.8%] lg:py-4">
         {/* Brand / Logo */}
         <a
           href="#home"
@@ -34,24 +78,46 @@ export default function Header(): React.JSX.Element {
           </span>
         </a>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Navigation with hover and keyboard-accessible dropdowns */}
         <nav
-          className="hidden items-center justify-end gap-6 pt-2 lg:flex xl:gap-8"
+          className="hidden items-center justify-end gap-5 pt-0 lg:flex xl:gap-7"
           aria-label="Main navigation"
         >
           {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="whitespace-nowrap text-[12px] font-normal tracking-wide text-[#2C2A29] transition-colors duration-200 hover:text-teal-600 xl:text-[13px]"
-            >
-              {link.label}
-            </a>
+            <div key={link.label} className="group relative">
+              <a
+                href={link.href}
+                className="inline-flex items-center gap-1 whitespace-nowrap py-3 text-[12px] font-normal tracking-wide text-[#2C2A29] transition-colors duration-200 hover:text-[#75aeb3] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#75aeb3] xl:text-[13px]"
+                aria-haspopup={link.submenu ? "true" : undefined}
+              >
+                {link.label}
+                {link.submenu && (
+                  <span aria-hidden="true" className="text-[10px]">▾</span>
+                )}
+              </a>
+
+              {link.submenu && (
+                <div className="invisible absolute left-0 top-full z-[80] min-w-[245px] translate-y-2 rounded-sm border border-[#e2ddd5] bg-[#F4F1EC] py-2 opacity-0 shadow-lg transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+                  <ul className="max-h-[70vh] overflow-y-auto">
+                    {link.submenu.map((item) => (
+                      <li key={item.label}>
+                        <a
+                          href={item.href}
+                          className="block whitespace-nowrap px-5 py-2.5 text-[12px] leading-relaxed text-[#2C2A29] underline-offset-4 transition-all duration-150 hover:underline focus-visible:underline focus-visible:outline-none"
+                        >
+                          {item.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
           ))}
 
           <a
             href="#contact"
-            className="inline-flex h-[44px] min-w-[120px] items-center justify-center rounded-full border border-[#2C2A29] px-7 text-[11px] tracking-[2px] text-[#2C2A29] transition-all duration-200 hover:bg-[#2C2A29] hover:text-white xl:min-w-[135px] xl:text-[12px]"
+            className="inline-flex h-[44px] min-w-[120px] items-center justify-center rounded-full border border-[#2C2A29] bg-transparent px-7 text-[11px] tracking-[2px] text-[#2C2A29] transition-colors duration-200 hover:bg-black hover:text-[#FFFFFF] focus-visible:bg-black focus-visible:text-[#FFFFFF] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black xl:min-w-[135px] xl:text-[12px]"
           >
             CONTACT
           </a>
@@ -84,7 +150,7 @@ export default function Header(): React.JSX.Element {
         </button>
       </header>
 
-      {/* Full-Screen Mobile Navigation */}
+      {/* Mobile Navigation: tap a section to expand its submenu */}
       <div
         id="mobile-navigation"
         className={`fixed inset-0 z-[60] flex flex-col bg-[#F4F1EC] transition-all duration-300 lg:hidden ${
@@ -94,7 +160,6 @@ export default function Header(): React.JSX.Element {
         }`}
         aria-hidden={!isMobileMenuOpen}
       >
-        {/* Mobile Brand and Cross Button */}
         <div className="flex shrink-0 items-start justify-between gap-4 px-6 pb-5 pt-8 sm:px-12">
           <div>
             <p className="font-serif text-[30px] leading-none tracking-tight text-[#2C2A29]">
@@ -117,34 +182,65 @@ export default function Header(): React.JSX.Element {
           </button>
         </div>
 
-        {/* Large Menu Links */}
         <nav
           aria-label="Mobile navigation"
-          className="flex flex-1 flex-col justify-center gap-5 overflow-y-auto px-8 py-6 sm:gap-6 sm:px-12"
+          className="flex flex-1 flex-col gap-2 overflow-y-auto px-8 py-4 sm:px-12"
         >
           {navLinks.map((link, index) => (
-            <a
-              key={link.label}
-              href={link.href}
-              tabIndex={isMobileMenuOpen ? 0 : -1}
-              onClick={closeMobileMenu}
-              className="w-fit font-serif text-[38px] font-normal leading-tight tracking-tight text-[#2C2A29] transition-colors duration-200 hover:text-[#75aeb3] sm:text-[48px]"
-              style={{
-                transitionDelay: isMobileMenuOpen ? `${index * 40}ms` : "0ms",
-              }}
-            >
-              {link.label}
-            </a>
+            <div key={link.label} className="border-b border-[#e2ddd5] py-2">
+              {link.submenu ? (
+                <>
+                  <button
+                    type="button"
+                    onClick={() => toggleMobileSubmenu(link.label)}
+                    aria-expanded={expandedMobileMenu === link.label}
+                    className="flex w-full items-center justify-between gap-4 py-2 text-left font-serif text-[30px] font-normal leading-tight tracking-tight text-[#2C2A29] transition-colors hover:text-[#75aeb3] sm:text-[36px]"
+                  >
+                    {link.label}
+                    <span aria-hidden="true" className="font-sans text-xl">
+                      {expandedMobileMenu === link.label ? "−" : "+"}
+                    </span>
+                  </button>
+                  {expandedMobileMenu === link.label && (
+                    <ul className="space-y-1 pb-3 pl-3 pt-1">
+                      {link.submenu.map((item) => (
+                        <li key={item.label}>
+                          <a
+                            href={item.href}
+                            tabIndex={isMobileMenuOpen ? 0 : -1}
+                            onClick={closeMobileMenu}
+                            className="block py-2 text-[14px] leading-relaxed text-[#62605B] transition-colors hover:text-[#2C2A29]"
+                          >
+                            {item.label}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </>
+              ) : (
+                <a
+                  href={link.href}
+                  tabIndex={isMobileMenuOpen ? 0 : -1}
+                  onClick={closeMobileMenu}
+                  className="block w-fit py-2 font-serif text-[30px] font-normal leading-tight tracking-tight text-[#2C2A29] transition-colors duration-200 hover:text-[#75aeb3] sm:text-[36px]"
+                  style={{
+                    transitionDelay: isMobileMenuOpen ? `${index * 40}ms` : "0ms",
+                  }}
+                >
+                  {link.label}
+                </a>
+              )}
+            </div>
           ))}
         </nav>
 
-        {/* More Oval Contact Button at Bottom */}
         <div className="shrink-0 border-t border-[#e2ddd5] px-8 pb-8 pt-6 sm:px-12 sm:pb-10">
           <a
             href="#contact"
             tabIndex={isMobileMenuOpen ? 0 : -1}
             onClick={closeMobileMenu}
-            className="flex h-[60px] w-full items-center justify-center rounded-full border border-[#2C2A29] px-10 text-[13px] font-medium tracking-[3px] text-[#2C2A29] transition-all duration-200 hover:bg-[#2C2A29] hover:text-white"
+            className="flex h-[60px] w-full items-center justify-center rounded-full border border-[#2C2A29] bg-transparent px-10 text-[13px] font-medium tracking-[3px] text-[#2C2A29] transition-colors duration-200 hover:bg-black hover:text-white focus-visible:bg-black focus-visible:text-white"
           >
             CONTACT
           </a>

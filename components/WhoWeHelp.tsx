@@ -2,7 +2,7 @@ import React from "react";
 
 export default function WhoWeHelp(): React.JSX.Element {
   return (
-    <section className="w-full bg-[#F4F1EC] py-24 px-[6%] box-border" id="services">
+    <section className="w-full bg-[#FFFFFF] py-24 px-[6%] box-border" id="services">
       <div className="w-full max-w-[1400px] mx-auto flex flex-col">
         
         {/* Section Heading with Left-Aligned Script Accent */}
