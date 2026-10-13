@@ -4,28 +4,28 @@ export default function ScheduleAppointment(): React.JSX.Element {
   return (
     <section
       id="schedule"
-      className="relative w-full max-w-[100vw] overflow-hidden bg-[#F4F1EC] py-12 sm:py-16 lg:py-[100px]"
+      className="relative w-full max-w-full overflow-hidden bg-[#F4F1EC] py-12 sm:py-16 md:py-[100px]"
     >
-      <div className="mx-auto flex w-full max-w-[1440px] flex-col items-stretch gap-8 sm:gap-10 lg:flex-row lg:items-end lg:justify-between lg:gap-0">
+      <div className="mx-auto flex w-full max-w-[1440px] flex-col items-stretch gap-8 sm:gap-10 md:flex-row md:items-end md:justify-between md:gap-0">
         {/* 1. Smaller Image: Left Aligned on Mobile */}
-        <div className="relative order-1 w-[65%] self-start sm:w-[55%] lg:w-[20%] lg:shrink-0">
+        <div className="relative order-1 w-[65%] self-start sm:w-[55%] md:w-[20%] md:shrink-0">
           <img
             src="/images/blurhand.jpg"
             alt="Person playing with shells on the beach"
-            className="block h-[220px] w-full object-cover opacity-50 sm:h-[280px] lg:h-[380px]"
+            className="block h-[220px] w-full object-cover opacity-50 sm:h-[280px] md:h-[380px]"
           />
         </div>
 
         {/* 2. Appointment Text and Button */}
-        <div className="relative order-2 flex w-full flex-col px-5 sm:px-8 md:px-12 lg:w-[50%] lg:shrink-0 lg:basis-[50%] lg:px-[4%]">
+        <div className="relative order-2 flex w-full flex-col px-5 sm:px-8 md:px-12 md:w-[50%] md:shrink-0 md:basis-[50%] md:px-[4%]">
           <p className="mb-4 font-sans text-[10px] font-medium uppercase tracking-[2px] text-[#716E68] sm:text-[11px]">
             SCHEDULE AN APPOINTMENT
           </p>
 
-          <h2 className="mb-6 font-serif text-[32px] font-normal leading-[1.2] text-[#2C2A29] sm:text-[38px] md:text-[42px] lg:text-[44px]">
+          <h2 className="mb-6 font-serif text-[30px] font-normal leading-[1.2] text-[#2C2A29] sm:text-[34px] md:text-[38px] lg:text-[44px]">
             Find a therapist who is the right fit for{" "}
             <span
-              className="text-[1.12em] font-normal italic text-[#83B9BC]"
+              className="text-[1.08em] font-normal italic text-[#83B9BC]"
               style={{ fontFamily: "'PrintedMoments', 'Cormorant Garamond', serif" }}
             >
               you.
@@ -61,7 +61,7 @@ export default function ScheduleAppointment(): React.JSX.Element {
         </div>
 
         {/* 3. Bigger Hands Image: Immediately Below Book Now on Mobile */}
-        <div className="relative order-3 ml-auto w-[82%] self-end sm:w-[75%] lg:w-[30%] lg:shrink-0 lg:basis-[30%]">
+        <div className="relative order-3 ml-auto w-[82%] self-end sm:w-[75%] md:w-[30%] md:shrink-0 md:basis-[30%]">
           <img
             src="/images/holdhands.jpg"
             alt="Person pointing at shells on sand with child"

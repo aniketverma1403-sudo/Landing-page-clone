@@ -21,20 +21,20 @@ export default function AreasOfExpertise(): React.JSX.Element {
 
   return (
     <section className="w-full bg-white py-24 px-[5.8%] box-border" id="expertise">
-      <div className="w-full max-w-[1400px] mx-auto flex flex-col lg:flex-row justify-between items-start gap-16">
+      <div className="w-full max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-start gap-16">
         
         {/* Left Column: Heading */}
-        <div className="lg:w-[35%] shrink-0">
-          <h2 className="font-serif text-[48px] font-normal leading-[1.15] text-[#2C2A29]">
+        <div className="md:w-[35%] shrink-0">
+          <h2 className="font-serif text-[38px] font-normal leading-[1.15] text-[#2C2A29] md:text-[42px] lg:text-[48px]">
             Our areas of <br />
-            <span className="italic text-[#83B9BC] font-normal text-[54px]" style={{ fontFamily: "'PrintedMoments', 'Cormorant Garamond', serif" }}>
+            <span className="italic text-[#83B9BC] font-normal text-[46px] md:text-[50px] lg:text-[54px]" style={{ fontFamily: "'PrintedMoments', 'Cormorant Garamond', serif" }}>
               expertise
             </span>
           </h2>
         </div>
 
         {/* Right Column: Two-Column List with Divider Lines */}
-        <div className="w-full lg:w-[60%] grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-0">
+        <div className="w-full md:w-[60%] grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-0">
           {/* Column 1 */}
           <ul className="flex flex-col">
             {leftColumnExpertises.map((item, index) => (

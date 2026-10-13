@@ -62,7 +62,7 @@ export default function Header(): React.JSX.Element {
 
   return (
     <>
-      <header className="relative z-50 box-border flex min-h-[96px] w-full items-center justify-between gap-4 bg-[#F4F1EC] px-6 py-4 lg:min-h-[120px] lg:px-[5.8%] lg:py-4">
+      <header className="relative z-50 box-border flex min-h-[96px] w-full items-center justify-between gap-4 bg-[#F4F1EC] px-6 py-4 md:min-h-[108px] lg:min-h-[120px] lg:px-[5.8%] lg:py-4">
         {/* Brand / Logo */}
         <a
           href="#home"
@@ -70,17 +70,17 @@ export default function Header(): React.JSX.Element {
           className="inline-flex shrink-0 flex-col gap-1"
           aria-label="Conejo Valley Family Counseling home"
         >
-          <span className="font-serif text-[32px] font-normal leading-none tracking-tight text-[#2C2A29] sm:text-[36px] lg:text-[42px]">
+          <span className="font-serif text-[28px] font-normal leading-none tracking-tight text-[#2C2A29] sm:text-[32px] md:text-[34px] lg:text-[42px]">
             Conejo Valley
           </span>
-          <span className="mt-1 whitespace-nowrap pl-[3px] text-[10px] leading-relaxed tracking-[4px] text-[#75aeb3] sm:text-[11px] lg:text-[12px] lg:tracking-[5px]">
+          <span className="mt-1 whitespace-nowrap pl-[3px] text-[9px] leading-relaxed tracking-[4px] text-[#75aeb3] sm:text-[10px] md:text-[10.5px] lg:text-[12px] lg:tracking-[5px]">
             FAMILY COUNSELING
           </span>
         </a>
 
         {/* Desktop Navigation with hover and keyboard-accessible dropdowns */}
         <nav
-          className="hidden items-center justify-end gap-5 pt-0 lg:flex xl:gap-7"
+          className="hidden items-center justify-end gap-3 pt-0 md:flex xl:gap-7"
           aria-label="Main navigation"
         >
           {navLinks.map((link) => (
@@ -117,7 +117,7 @@ export default function Header(): React.JSX.Element {
 
           <a
             href="#contact"
-            className="inline-flex h-[44px] min-w-[120px] items-center justify-center rounded-full border border-[#2C2A29] bg-transparent px-7 text-[11px] tracking-[2px] text-[#2C2A29] transition-colors duration-200 hover:bg-black hover:text-[#FFFFFF] focus-visible:bg-black focus-visible:text-[#FFFFFF] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black xl:min-w-[135px] xl:text-[12px]"
+            className="inline-flex h-[40px] min-w-[110px] items-center justify-center rounded-full border border-[#2C2A29] bg-transparent px-6 text-[10px] tracking-[2px] text-[#2C2A29] transition-colors duration-200 hover:bg-black hover:text-[#FFFFFF] focus-visible:bg-black focus-visible:text-[#FFFFFF] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black md:text-[10.5px] xl:min-w-[135px] xl:text-[12px]"
           >
             CONTACT
           </a>
@@ -127,7 +127,7 @@ export default function Header(): React.JSX.Element {
         <button
           type="button"
           onClick={() => setIsMobileMenuOpen((open) => !open)}
-          className="relative z-[70] flex h-10 w-10 shrink-0 flex-col items-center justify-center gap-[6px] focus:outline-none lg:hidden"
+          className="relative z-[70] flex h-10 w-10 shrink-0 flex-col items-center justify-center gap-[6px] focus:outline-none md:hidden"
           aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={isMobileMenuOpen}
           aria-controls="mobile-navigation"

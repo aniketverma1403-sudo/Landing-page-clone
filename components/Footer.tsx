@@ -16,18 +16,18 @@ export default function Footer(): React.JSX.Element {
 
   return (
     <footer
-      className="box-border w-full bg-white pt-16 sm:pt-20 lg:pt-[100px]"
+      className="box-border w-full bg-white pt-16 sm:pt-20 md:pt-25"
       id="footer"
     >
-      <div className="mx-auto grid w-full max-w-[1400px] grid-cols-1 items-start gap-10 px-6 sm:px-8 lg:grid-cols-[32%_16%_24%_28%] lg:gap-[40px] lg:px-[6%]">
+      <div className="mx-auto grid w-full max-w-350 grid-cols-1 items-start gap-10 px-6 sm:px-8 md:grid-cols-[minmax(0,1.28fr)_minmax(0,0.64fr)_minmax(0,0.96fr)_minmax(0,1.12fr)] md:gap-3 md:px-[4%] lg:gap-10 lg:px-[6%]">
         {/* Brand Info */}
-        <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-          <div className="mb-5 lg:mb-[24px]">
-            <h2 className="m-0 font-serif text-[38px] font-[300] leading-[1.3] tracking-[-0.5px] text-[#2c2a29] sm:text-[42px] lg:text-[46px] lg:leading-[1.5]">
+        <div className="flex flex-col items-center text-center md:items-start md:text-left">
+          <div className="mb-5 md:mb-6">
+            <h2 className="m-0 font-serif text-[38px] font-light leading-[1.3] tracking-[-0.5px] text-[#2c2a29] sm:text-[42px] lg:text-[46px] lg:leading-normal">
               Conejo Valley
             </h2>
 
-            <span className="mt-2 block font-serif text-[16px] font-semibold uppercase tracking-[4px] text-[#6a635b] sm:text-[18px] sm:tracking-[5px] lg:mt-[12px] lg:text-[20px] lg:tracking-[5.5px]">
+            <span className="mt-2 block font-serif text-[16px] font-semibold uppercase tracking-[4px] text-[#6a635b] sm:text-[18px] sm:tracking-[5px] md:mt-3 md:text-[20px] md:tracking-[5.5px]">
               FAMILY COUNSELING
             </span>
           </div>
@@ -41,7 +41,7 @@ export default function Footer(): React.JSX.Element {
 
         {/* Navigate */}
         <div className="flex flex-col">
-          <h3 className="m-0 mb-5 text-[10.5px] font-semibold uppercase tracking-[1.5px] text-[#7D756D] lg:mb-[20px]">
+          <h3 className="m-0 mb-5 text-[10.5px] font-semibold uppercase tracking-[1.5px] text-[#7D756D] md:mb-5">
             NAVIGATE
           </h3>
 
@@ -82,8 +82,8 @@ export default function Footer(): React.JSX.Element {
         </div>
 
         {/* Contact — appears before Our Team on mobile */}
-        <div className="order-3 flex flex-col lg:order-4">
-          <h3 className="m-0 mb-5 text-[10.5px] font-semibold uppercase tracking-[1.5px] text-[#7D756D] lg:mb-[20px]">
+        <div className="order-3 flex flex-col md:order-4">
+          <h3 className="m-0 mb-5 text-[10.5px] font-semibold uppercase tracking-[1.5px] text-[#7D756D] md:mb-5">
             CONTACT
           </h3>
 
@@ -97,7 +97,7 @@ export default function Footer(): React.JSX.Element {
               <br />
               <a
                 href="mailto:info@conejovalleycounseling.com"
-                className="break-words text-[#62605b] no-underline transition-colors duration-200 hover:text-[#30302e]"
+                className="wrap-break-word text-[#62605b] no-underline transition-colors duration-200 hover:text-[#30302e]"
               >
                 info@conejovalleycounseling.com
               </a>
@@ -118,8 +118,8 @@ export default function Footer(): React.JSX.Element {
         </div>
 
         {/* Our Team */}
-        <div className="order-4 flex flex-col lg:order-3">
-          <h3 className="m-0 mb-5 text-[10.5px] font-semibold uppercase tracking-[1.5px] text-[#7D756D] lg:mb-[20px]">
+        <div className="order-4 flex flex-col md:order-3">
+          <h3 className="m-0 mb-5 text-[10.5px] font-semibold uppercase tracking-[1.5px] text-[#7D756D] md:mb-5">
             OUR TEAM
           </h3>
 
@@ -139,9 +139,9 @@ export default function Footer(): React.JSX.Element {
       </div>
 
       {/* Bottom Accent Bar */}
-      <div className="mt-12 bg-[#83b9bc] px-6 py-6 sm:px-8 lg:mt-[80px] lg:px-[6%] lg:py-[24px]">
-        <div className="mx-auto flex w-full max-w-[1400px] flex-col items-start gap-2 lg:flex-row lg:items-center lg:justify-between lg:gap-6">
-          <p className="m-0 text-[11px] leading-[1.9] tracking-[0.3px] text-white sm:text-[11.5px] lg:tracking-[0.5px]">
+      <div className="mt-12 bg-[#83b9bc] px-6 py-6 sm:px-8 md:mt-20 md:px-[4%] md:py-6 lg:px-[6%]">
+        <div className="mx-auto flex w-full max-w-350 flex-col items-start gap-2 md:flex-row md:items-center md:justify-between md:gap-6">
+          <p className="m-0 text-[11px] leading-[1.9] tracking-[0.3px] text-white sm:text-[11.5px] md:tracking-[0.5px]">
             <a href="#terms" className="hover:underline">
               Terms
             </a>
@@ -154,13 +154,13 @@ export default function Footer(): React.JSX.Element {
               Disclaimer
             </a>
             {" | "}
-            <span className="lg:hidden">Website by</span>
-            <span className="hidden lg:inline">
+            <span className="md:hidden">Website by</span>
+            <span className="hidden md:inline">
               Website by Walker Strategy Co.
             </span>
           </p>
 
-          <p className="m-0 text-[11px] tracking-[0.3px] text-white sm:text-[11.5px] lg:hidden">
+          <p className="m-0 text-[11px] tracking-[0.3px] text-white sm:text-[11.5px] md:hidden">
             Walker Strategy Company
           </p>
         </div>

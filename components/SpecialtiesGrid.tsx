@@ -30,12 +30,12 @@ export default function SpecialtiesGrid(): React.JSX.Element {
 
   return (
     <section className="bg-white py-[120px] px-[6%] w-full box-border" id="specialties">
-      <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-[35%_65%] gap-[60px] items-start">
+      <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-[35%_65%] gap-[60px] items-start">
         
         {/* Left Column: Sticky Heading */}
         <div className="sticky top-[120px]">
-          <h2 className="font-serif text-[44px] font-normal leading-[1.15] text-[#2C2A29]">
-            Our <span className="italic text-[#83B9BC] font-normal text-[52px]" style={{ fontFamily: "'PrintedMoments', 'Cormorant Garamond', serif" }}>specialities</span> <br />
+          <h2 className="font-serif text-[36px] font-normal leading-[1.15] text-[#2C2A29] md:text-[40px] lg:text-[44px]">
+            Our <span className="italic text-[#83B9BC] font-normal text-[42px] md:text-[46px] lg:text-[52px]" style={{ fontFamily: "'PrintedMoments', 'Cormorant Garamond', serif" }}>specialities</span> <br />
             include...
           </h2>
         </div>

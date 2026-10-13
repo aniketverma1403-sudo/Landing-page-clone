@@ -2,12 +2,12 @@ import React from "react";
 
 export default function AboutSection(): React.JSX.Element {
   return (
-    <section className="w-screen relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] bg-[#F4F1EC] py-16 lg:pt-32 lg:pb-24 overflow-hidden box-border" id="about">
-      <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-0 m-0 p-0">
+    <section className="w-full bg-[#F4F1EC] py-16 lg:pt-32 lg:pb-24 overflow-hidden box-border" id="about">
+      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-8 md:gap-10 lg:gap-0 m-0 p-0">
         
         {/* Left Column (Text area) */}
-        <div className="w-full lg:flex-1 px-6 lg:pl-[8%] lg:pr-6 flex flex-col justify-center max-w-[900px] lg:pt-4">
-          <h2 className="font-serif text-[32px] sm:text-[38px] lg:text-[42px] font-normal leading-[1.2] text-[#2C2A29] mb-8 lg:mb-12">
+        <div className="w-full px-6 md:w-[58%] md:max-w-[58%] md:px-0 md:pl-[6%] md:pr-4 lg:w-[62%] lg:max-w-[900px] lg:pl-[8%] lg:pr-6 flex flex-col justify-center lg:pt-4">
+          <h2 className="font-serif text-[30px] sm:text-[34px] md:text-[36px] lg:text-[42px] font-normal leading-[1.2] text-[#2C2A29] mb-8 lg:mb-12">
             You’re holding onto hope that life can be <br className="hidden md:block" />
             better than it is right now.
           </h2>
@@ -22,7 +22,7 @@ export default function AboutSection(): React.JSX.Element {
               </p>
             </div>
 
-            <div className="hidden lg:flex lg:flex-col lg:justify-end">
+            <div className="hidden md:flex md:flex-col md:justify-end">
               <p className="text-[#62605B] text-[15px] leading-[1.7]">
                 First and foremost, we believe what you&apos;re going through is real, valid, and worthy of support. Our team offers clients in the Newbury Park area and across CA an environment to discover a new life and a deeper sense of self in the midst of their struggles. As we tap into the power of connection and understanding, you can find your footing again and take a transformative path forward.
               </p>
@@ -31,15 +31,15 @@ export default function AboutSection(): React.JSX.Element {
         </div>
 
         {/* Right Column (Image touching right edge on desktop, full width on mobile) */}
-        <div className="order-2 w-full lg:w-[35%] shrink-0 p-4 sm:p-5 lg:p-0 m-0">
+        <div className="order-2 w-full px-4 md:w-[42%] md:max-w-[42%] md:p-0 lg:w-[35%] lg:max-w-[35%] shrink-0 m-0">
           <img
             src="/images/Ocean.jpg"
             alt="Calm ocean waves meeting sandy beach"
-            className="block w-full h-[320px] sm:h-[420px] lg:h-[580px] object-cover rounded-none"
+            className="block w-full h-[280px] sm:h-[360px] md:h-[360px] lg:h-[580px] object-cover rounded-none"
           />
         </div>
 
-        <div className="order-3 w-full px-6 pb-2 text-[#62605B] text-[15px] leading-[1.7] lg:hidden">
+        <div className="order-3 w-full px-6 pb-2 text-[#62605B] text-[15px] leading-[1.7] md:hidden">
           <p>
             First and foremost, we believe what you&apos;re going through is real, valid, and worthy of support. Our team offers clients in the Newbury Park area and across CA an environment to discover a new life and a deeper sense of self in the midst of their struggles. As we tap into the power of connection and understanding, you can find your footing again and take a transformative path forward.
           </p>
