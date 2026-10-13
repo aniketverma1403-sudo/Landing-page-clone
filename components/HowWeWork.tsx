@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function AboutSection(): React.JSX.Element {
   return (
     <section
-      id="about"
+      id="how-we-work"
       className="relative left-1/2 right-1/2 box-border w-screen max-w-[100vw] -ml-[50vw] -mr-[50vw] overflow-hidden bg-[#F4F1EC] py-16 lg:py-24"
     >
       <div className="m-0 flex w-full flex-col items-stretch justify-between gap-8 p-0 lg:flex-row lg:gap-0">

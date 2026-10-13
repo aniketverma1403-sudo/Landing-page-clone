@@ -20,7 +20,7 @@ export default function AreasOfExpertise(): React.JSX.Element {
   ];
 
   return (
-    <section className="w-full bg-[#FFFFF] py-24 px-[5.8%] box-border" id="expertise">
+    <section className="w-full bg-white py-24 px-[5.8%] box-border" id="expertise">
       <div className="w-full max-w-[1400px] mx-auto flex flex-col lg:flex-row justify-between items-start gap-16">
         
         {/* Left Column: Heading */}

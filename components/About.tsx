@@ -33,7 +33,7 @@ export default function AboutSection(): React.JSX.Element {
         {/* Right Column (Image touching right edge on desktop, full width on mobile) */}
         <div className="order-2 w-full lg:w-[35%] shrink-0 p-4 sm:p-5 lg:p-0 m-0">
           <img
-            src="/images/ocean.jpg"
+            src="/images/Ocean.jpg"
             alt="Calm ocean waves meeting sandy beach"
             className="block w-full h-[320px] sm:h-[420px] lg:h-[580px] object-cover rounded-none"
           />
