@@ -68,11 +68,6 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 button {
   font: inherit;
 }
@@ -88,4 +83,10 @@ label,
 .text-xs {
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
+.maya-page a:focus-visible,
+.maya-page summary:focus-visible {
+  outline: 2px solid #a65f48;
+  outline-offset: 3px;
 }
