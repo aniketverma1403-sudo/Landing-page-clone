@@ -7,7 +7,7 @@ export default function WhoWeHelp(): React.JSX.Element {
         
         {/* Section Heading with Left-Aligned Script Accent */}
         <h2 className="font-serif text-[42px] font-normal text-[#2C2A29] mb-16 tracking-tight">
-          Who we <span className="font-serif italic text-[#83B9BC] font-normal text-[52px]">help</span>
+          Who we <span className="italic text-[#83B9BC] font-normal text-[52px]" style={{ fontFamily: "'PrintedMoments', 'Cormorant Garamond', serif" }}>help</span>
         </h2>
 
         {/* Layout wrapper creating empty space on the left and shifting cards right */}

@@ -35,7 +35,7 @@ export default function SpecialtiesGrid(): React.JSX.Element {
         {/* Left Column: Sticky Heading */}
         <div className="sticky top-[120px]">
           <h2 className="font-serif text-[44px] font-normal leading-[1.15] text-[#2C2A29]">
-            Our <span className="font-serif italic text-[#83B9BC] font-normal text-[52px]">specialities</span> <br />
+            Our <span className="italic text-[#83B9BC] font-normal text-[52px]" style={{ fontFamily: "'PrintedMoments', 'Cormorant Garamond', serif" }}>specialities</span> <br />
             include...
           </h2>
         </div>

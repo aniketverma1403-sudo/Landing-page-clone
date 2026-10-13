@@ -18,7 +18,10 @@ export default function HonoringSection(): React.JSX.Element {
         <div className="w-full lg:flex-1 flex flex-col justify-center lg:justify-end px-6 sm:px-10 lg:px-0 lg:pr-[6%] lg:pb-[20px] order-2 lg:order-2">
           <h2 className="m-0 font-serif text-[28px] sm:text-[34px] font-normal leading-[1.25] text-[#2C2A29]">
             Honoring where you’ve been{" "}
-            <span className="font-serif italic text-[36px] sm:text-[45px] text-[#83b9bc] font-normal inline-block align-middle mx-[4px]">
+            <span
+              className="italic text-[36px] sm:text-[45px] text-[#83b9bc] font-normal inline-block align-middle mx-[4px]"
+              style={{ fontFamily: "'PrintedMoments', 'Cormorant Garamond', serif" }}
+            >
               &amp;
             </span>{" "}
             helping shape where you’re <br className="hidden sm:block" />headed.

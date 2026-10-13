@@ -27,7 +27,7 @@ export default function AreasOfExpertise(): React.JSX.Element {
         <div className="lg:w-[35%] shrink-0">
           <h2 className="font-serif text-[48px] font-normal leading-[1.15] text-[#2C2A29]">
             Our areas of <br />
-            <span className="font-serif italic text-[#83B9BC] font-normal text-[54px]">
+            <span className="italic text-[#83B9BC] font-normal text-[54px]" style={{ fontFamily: "'PrintedMoments', 'Cormorant Garamond', serif" }}>
               expertise
             </span>
           </h2>

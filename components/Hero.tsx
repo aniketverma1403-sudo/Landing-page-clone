@@ -40,7 +40,10 @@ export default function Hero(): React.JSX.Element {
             Rebuild your foundation on
             <br className="hidden md:block" /> solid ground and finally begin
             <br className="hidden md:block" /> to{" "}
-            <span className="inline-block -rotate-[5deg] font-serif text-[1.2em] italic leading-[0.8] tracking-[-2px] text-[#83B9BC]">
+            <span
+              className="inline-block -rotate-[5deg] text-[1.2em] italic leading-[0.8] tracking-[-2px] text-[#83B9BC]"
+              style={{ fontFamily: "'PrintedMoments', 'Cormorant Garamond', serif" }}
+            >
               thrive
             </span>
             .

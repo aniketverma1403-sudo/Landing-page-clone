@@ -24,7 +24,10 @@ export default function ScheduleAppointment(): React.JSX.Element {
 
           <h2 className="mb-6 font-serif text-[32px] font-normal leading-[1.2] text-[#2C2A29] sm:text-[38px] md:text-[42px] lg:text-[44px]">
             Find a therapist who is the right fit for{" "}
-            <span className="font-serif text-[1.12em] font-normal italic text-[#83B9BC]">
+            <span
+              className="text-[1.12em] font-normal italic text-[#83B9BC]"
+              style={{ fontFamily: "'PrintedMoments', 'Cormorant Garamond', serif" }}
+            >
               you.
             </span>
           </h2>
