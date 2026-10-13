@@ -17,11 +17,11 @@ export default function Office() {
             <p className="max-w-xl font-serif text-xl leading-relaxed text-[#34483B] sm:text-2xl">In-person therapy in Santa Monica, or secure telehealth for clients located in California.</p>
           </div>
         </div>
-        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:mt-16">
+        <div className="mx-auto mt-12 grid max-w-5xl gap-5 sm:grid-cols-2 lg:mt-14 lg:gap-8">
           {officePhotos.map((photo) => (
-            <figure key={photo.src} className="group overflow-hidden rounded-t-[10rem] rounded-b-xl bg-[#E2E8DC]">
-              <div className="relative aspect-4/5 overflow-hidden">
-                <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 639px) 100vw, (max-width: 1023px) 50vw, 33vw" className="object-cover transition duration-700 group-hover:scale-[1.035]" />
+            <figure key={photo.src} className="group overflow-hidden rounded-t-[6rem] rounded-b-xl bg-[#E2E8DC] sm:rounded-t-[8rem]">
+              <div className="relative aspect-4/3 overflow-hidden bg-[#E2E8DC]">
+                <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 639px) 90vw, (max-width: 1023px) 45vw, 38rem" className="object-contain transition-transform duration-500 group-hover:scale-[1.02]" />
               </div>
               <figcaption className="px-5 py-4 text-sm text-[#59665A]">{photo.caption}</figcaption>
             </figure>
