@@ -3,8 +3,8 @@ export default function MayaFooter() {
     <footer className="border-t border-[#E5E1D7] px-5 py-8 sm:px-8">
       <div className="mx-auto flex max-w-7xl flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <p className="font-serif text-lg text-[#34483B]">Dr. Maya Reynolds</p>
-          <p className="mt-1 text-[10px] uppercase tracking-[0.17em] text-[#687466]">Therapy in Santa Monica</p>
+          <p className="font-serif text-lg text-[#34483B]">Dr. Maya Reynolds, PsyD</p>
+          <p className="mt-1 text-[10px] uppercase tracking-[0.17em] text-[#687466]">Licensed Clinical Psychologist · Fictional Profile</p>
         </div>
         <address className="text-xs leading-6 not-italic text-[#687466]">123th Street 45 W<br />Santa Monica, CA 90401</address>
       </div>

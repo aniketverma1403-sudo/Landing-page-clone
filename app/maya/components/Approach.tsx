@@ -1,10 +1,10 @@
 import { SectionTitle } from "./MayaPrimitives";
 
 const approaches = [
-  { title: "Cognitive Behavioral Therapy", short: "CBT", description: "Explore connections between thoughts, feelings, and actions, and consider useful ways to respond to everyday challenges." },
-  { title: "Eye Movement Desensitization and Reprocessing", short: "EMDR", description: "A structured approach that may be used when working through distressing experiences, guided by your needs and readiness." },
-  { title: "Mindfulness-based practices", short: "MINDFULNESS", description: "Build awareness of the present moment with curiosity and less judgment." },
-  { title: "Body-oriented techniques", short: "BODY", description: "Notice physical experiences and explore grounding approaches as part of therapy." },
+  { title: "Cognitive-behavioral therapy", short: "CBT", description: "An evidence-based method integrated into a warm, collaborative approach shaped around the person and their experience." },
+  { title: "EMDR", short: "EMDR", description: "An evidence-based method that may be integrated into trauma work, paced with attention to safety and stabilization." },
+  { title: "Mindfulness-based practices", short: "MINDFULNESS", description: "Part of an integrated approach to understanding both the emotional and physiological sides of what you are experiencing." },
+  { title: "Body-oriented techniques", short: "BODY", description: "Included among the methods used to help clients understand the emotional and physiological sides of their experiences." },
 ];
 
 export default function Approach() {
@@ -12,9 +12,9 @@ export default function Approach() {
     <section id="approach" className="px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
         <div>
-          <SectionTitle eyebrow="My approach" title="Evidence-informed. Human first." description="There is no single formula for feeling better. Our work is shaped around your needs, goals, and sense of readiness." />
+          <SectionTitle eyebrow="Therapy approach" title="Practical tools with room for depth." description="Dr. Maya Reynolds integrates CBT, EMDR, mindfulness-based practices, and body-oriented techniques to help clients understand both the emotional and physiological sides of what they are experiencing." />
           <div className="mt-8 rounded-2xl bg-[#E2E8DC] p-6 sm:p-7">
-            <p className="font-serif text-xl leading-relaxed text-[#34483B]">Bring curiosity to what’s happening, without judging yourself for it.</p>
+            <p className="font-serif text-xl leading-relaxed text-[#34483B]">Warm, collaborative, grounded sessions—structured for support, with room for reflection and depth.</p>
           </div>
         </div>
         <div className="divide-y divide-[#E5E1D7] border-y border-[#E5E1D7]">

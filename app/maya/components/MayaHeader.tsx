@@ -17,7 +17,7 @@ export default function MayaHeader() {
   return (
     <>
       <div className="bg-[#34483B] px-4 py-2 text-center text-[11px] tracking-[0.08em] text-[#F8F5ED] sm:text-xs">
-        SANTA MONICA OFFICE · ASK ABOUT APPOINTMENT OPTIONS
+        FICTIONAL THERAPIST PROFILE · DESIGN DEMONSTRATION ONLY
       </div>
 
       <header className="relative z-20 border-b border-[#E5E1D7] bg-[#F8F5ED]">
@@ -25,7 +25,7 @@ export default function MayaHeader() {
           <a href="#home" aria-label="Dr. Maya Reynolds home" className="shrink-0 leading-tight">
             <span className="block font-serif text-xl tracking-[-0.03em] sm:text-2xl">Dr. Maya Reynolds</span>
             <span className="mt-1.5 block text-[9px] uppercase tracking-[0.2em] text-[#687466] sm:text-[10px]">
-              Therapy · Santa Monica, California
+              PsyD · Licensed Clinical Psychologist
             </span>
           </a>
 
@@ -76,7 +76,7 @@ export default function MayaHeader() {
               rel="noreferrer"
               className="shrink-0 rounded-full border border-[#A65F48] bg-[#A65F48] px-4 py-2.5 text-xs font-semibold text-white transition-colors hover:border-[#874631] hover:bg-[#874631] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#34483B] sm:px-5 sm:text-sm"
             >
-              View office address <span aria-hidden="true" className="ml-1">↗</span>
+              Directions to Santa Monica office <span aria-hidden="true" className="ml-1">↗</span>
             </a>
           </div>
         </div>

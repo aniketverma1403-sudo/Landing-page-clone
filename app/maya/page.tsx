@@ -11,13 +11,13 @@ import Office from "./components/Office";
 import Services from "./components/Services";
 
 export const metadata: Metadata = {
-  title: "Dr. Maya Reynolds | Therapy in Santa Monica, CA",
+  title: "Dr. Maya Reynolds, PsyD | Santa Monica Therapy (Fictional)",
   description:
-    "Learn about therapy with Dr. Maya Reynolds in Santa Monica, California, including support for anxiety, trauma, burnout, and perfectionism.",
+    "Fictional profile: Dr. Maya Reynolds, PsyD, offers adult anxiety, trauma, and burnout therapy in Santa Monica, CA, plus secure California telehealth.",
   openGraph: {
-    title: "Dr. Maya Reynolds | Therapy in Santa Monica, CA",
+    title: "Dr. Maya Reynolds, PsyD | Santa Monica Therapy (Fictional)",
     description:
-      "Explore therapy services, approach, office details, and frequently asked questions for Dr. Maya Reynolds in Santa Monica, California.",
+      "Fictional therapist profile for adult anxiety, trauma, stress, and burnout therapy in Santa Monica, California, with secure telehealth for California clients.",
     type: "website",
   },
 };

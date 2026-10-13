@@ -5,14 +5,14 @@ export default function AboutMaya() {
     <section id="about" className="px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24">
         <div>
-          <SectionTitle eyebrow="A little about Maya" title="You don’t have to have it all figured out." />
+          <SectionTitle eyebrow="About Dr. Maya Reynolds, PsyD" title="Support for adults who feel overwhelmed, stuck, or on edge." />
           <div className="mt-8 hidden h-px w-24 bg-[#B96F55] lg:block" />
         </div>
         <div className="space-y-5 text-base leading-8 text-[#59665A] sm:text-lg sm:leading-9">
-          <p>I’m Dr. Maya Reynolds. I work with adults who may appear to be managing everything on the outside while feeling overwhelmed, tense, or disconnected on the inside.</p>
-          <p>Therapy with me is warm and collaborative. We can make sense of patterns that no longer serve you, explore what has been difficult, and create space for new ways of responding—without expecting you to change everything at once.</p>
-          <p>You bring your experiences, questions, and hopes. We’ll work together to understand what matters to you and find an approach that respects your needs and boundaries.</p>
-          <a href="#approach" className="group inline-flex items-center border-b border-[#B96F55] pb-1 text-sm font-semibold text-[#34483B]">Learn about how I work <span aria-hidden="true" className="ml-2 transition-transform group-hover:translate-x-1">↗</span></a>
+          <p>I’m Dr. Maya Reynolds, PsyD, a licensed clinical psychologist based in Santa Monica, California. I offer therapy for adults experiencing anxiety, stress, panic, burnout, and the lingering effects of past experiences.</p>
+          <p>Many of the people I work with are high-achieving, thoughtful, and self-aware. On the outside they may seem functional; internally, they may feel exhausted, caught in overthinking, tense in their bodies, or emotionally on edge.</p>
+          <p>My approach is warm, collaborative, and grounded. Sessions are structured enough to feel supportive while leaving space for reflection and depth. My goal is to support insight, resilience, and a stronger relationship with yourself over time—not only symptom relief.</p>
+          <a href="#approach" className="group inline-flex items-center border-b border-[#B96F55] pb-1 text-sm font-semibold text-[#34483B]">Explore my therapy approaches <span aria-hidden="true" className="ml-2 transition-transform group-hover:translate-x-1">↗</span></a>
         </div>
       </div>
     </section>

@@ -1,9 +1,9 @@
 import { SectionTitle } from "./MayaPrimitives";
 
 const services = [
-  { number: "01", title: "Anxiety & panic", description: "Understand the patterns behind anxious thoughts, constant worry, and the feeling that you always need to be prepared for what might go wrong.", detail: "Find steadier ground" },
-  { number: "02", title: "Trauma-informed therapy", description: "Explore difficult experiences at a pace that respects your boundaries, with safety, trust, and your sense of control at the center.", detail: "Move at your own pace" },
-  { number: "03", title: "Burnout & perfectionism", description: "Make room for the parts of you that are tired of striving, overthinking, and feeling responsible for holding everything together.", detail: "Make space for yourself" },
+  { number: "01", title: "Anxiety, panic & stress", description: "For adults living with constant worry, overthinking, body tension, sleep difficulties, or the feeling that something may go wrong. Therapy can help you understand what you are experiencing and find a way forward.", detail: "Explore the approach" },
+  { number: "02", title: "Trauma & past experiences", description: "Support for the effects of single-incident trauma and longer-standing experiences connected with childhood, relationships, or chronic stress. Trauma work is paced carefully, with safety and stabilization in focus.", detail: "Learn about trauma care" },
+  { number: "03", title: "Burnout & perfectionism", description: "For entrepreneurs, creatives, and professionals carrying high internal pressure or feeling disconnected after years of pushing through stress. Therapy offers room to slow down and consider more sustainable ways of living and working.", detail: "Explore therapy options" },
 ];
 
 export default function Services() {
@@ -11,8 +11,8 @@ export default function Services() {
     <section id="services" className="bg-[#F0EDE4] px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col gap-7 lg:flex-row lg:items-end lg:justify-between">
-          <SectionTitle eyebrow="What brings you here" title="Support for the things you carry." description="You don’t need to know exactly what kind of therapy you need. Start with what has been feeling hard." />
-          <p className="max-w-sm text-sm leading-7 text-[#687466] lg:pb-1">A thoughtful, individual approach—not a one-size-fits-all answer.</p>
+          <SectionTitle eyebrow="Adult therapy in Santa Monica" title="Support for anxiety, trauma & burnout." description="Therapy for adults who feel overwhelmed by anxiety, stress, panic, past experiences, professional burnout, or perfectionism." />
+          <p className="max-w-sm text-sm leading-7 text-[#687466] lg:pb-1">Available in person in Santa Monica and through secure telehealth for California clients.</p>
         </div>
         <div className="mt-12 grid gap-5 md:grid-cols-3">
           {services.map((service) => (
@@ -20,7 +20,7 @@ export default function Services() {
               <span className="font-serif text-3xl text-[#B96F55]">{service.number}</span>
               <h3 className="mt-6 font-serif text-2xl leading-snug text-[#34483B]">{service.title}</h3>
               <p className="mt-4 flex-1 text-sm leading-7 text-[#59665A]">{service.description}</p>
-              <a href="#contact" className="group mt-7 inline-flex items-center text-xs font-semibold uppercase tracking-widest text-[#34483B]">{service.detail} <span aria-hidden="true" className="ml-2 transition-transform group-hover:translate-x-1">↗</span></a>
+              <a href="#approach" className="group mt-7 inline-flex items-center text-xs font-semibold uppercase tracking-widest text-[#34483B]">{service.detail} <span aria-hidden="true" className="ml-2 transition-transform group-hover:translate-x-1">↗</span></a>
             </article>
           ))}
         </div>

@@ -1,17 +1,18 @@
-const faqs = [
-  { question: "What happens in the first session?", answer: "The first conversation is an opportunity to talk about what has brought you to therapy, ask questions, and consider what you would like support with. You do not need to arrive with everything figured out." },
-  { question: "Do you offer in-person and online sessions?", answer: "Sessions are available in person at the Santa Monica office and through secure telehealth for clients located in California." },
-  { question: "What if I am nervous about starting therapy?", answer: "Feeling unsure is understandable. You can begin with a conversation, ask about the process, and decide whether it feels like a good fit. There is no expectation to share more than you are ready to share." },
-  { question: "What therapy approaches do you use?", answer: "Therapy may include Cognitive Behavioral Therapy (CBT), Eye Movement Desensitization and Reprocessing (EMDR), mindfulness-based practices, and body-oriented techniques. The approach is guided by your needs and goals." },
-];
-
 import { SectionTitle } from "./MayaPrimitives";
+
+const faqs = [
+  { question: "Who does Dr. Maya Reynolds work with?", answer: "Dr. Reynolds works with adults, including high-achieving, thoughtful, self-aware people who may feel exhausted, stuck in overthinking, or emotionally on edge." },
+  { question: "What concerns are a focus of therapy?", answer: "Her work often focuses on anxiety, panic, trauma, and burnout. She also supports adults dealing with stress, perfectionism, high internal pressure, and the lingering effects of past experiences." },
+  { question: "What therapy approaches are included?", answer: "Dr. Reynolds integrates cognitive-behavioral therapy (CBT), EMDR, mindfulness-based practices, and body-oriented techniques to help clients understand both the emotional and physiological sides of what they are experiencing." },
+  { question: "How is trauma work approached?", answer: "Trauma work is paced carefully, with an emphasis on safety, stabilization, and helping clients feel more regulated in daily life—not just during sessions." },
+  { question: "Are sessions available in person and by telehealth?", answer: "Yes. Sessions are available in person at the Santa Monica office and through secure telehealth for clients located in California." },
+];
 
 export default function FAQ() {
   return (
     <section id="faq" className="px-5 py-20 sm:px-8 sm:py-28">
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
-        <SectionTitle eyebrow="Questions are welcome" title="A little clarity before you begin." description="It’s completely okay to have questions before reaching out. Here are a few things people often want to know." />
+        <SectionTitle eyebrow="Adult therapy FAQs" title="About therapy with Dr. Maya Reynolds." description="Learn who the practice is designed to support, which approaches are included, and how sessions are offered." />
         <div className="divide-y divide-[#D9DDD1] border-y border-[#D9DDD1]">
           {faqs.map((faq) => (
             <details key={faq.question} className="group py-5">
