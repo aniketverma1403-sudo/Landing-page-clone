@@ -1,10 +1,10 @@
 import { SectionTitle } from "./MayaPrimitives";
 
 const approaches = [
-  { title: "A collaborative conversation", short: "TOGETHER", description: "Share what matters to you and help shape the focus of your therapy." },
-  { title: "A pace that feels manageable", short: "YOUR PACE", description: "Take time to decide what you want to discuss and when you feel ready to discuss it." },
-  { title: "Noticing patterns", short: "REFLECTION", description: "Explore thoughts, feelings, and experiences with curiosity rather than self-judgment." },
-  { title: "Finding next steps", short: "PRACTICE", description: "Consider practical ways to respond to challenges in daily life, based on what feels useful to you." },
+  { title: "Cognitive Behavioral Therapy", short: "CBT", description: "Explore connections between thoughts, feelings, and actions, and consider useful ways to respond to everyday challenges." },
+  { title: "Eye Movement Desensitization and Reprocessing", short: "EMDR", description: "A structured approach that may be used when working through distressing experiences, guided by your needs and readiness." },
+  { title: "Mindfulness-based practices", short: "MINDFULNESS", description: "Build awareness of the present moment with curiosity and less judgment." },
+  { title: "Body-oriented techniques", short: "BODY", description: "Notice physical experiences and explore grounding approaches as part of therapy." },
 ];
 
 export default function Approach() {

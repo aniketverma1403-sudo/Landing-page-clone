@@ -1,8 +1,8 @@
 const faqs = [
   { question: "What happens in the first session?", answer: "The first conversation is an opportunity to talk about what has brought you to therapy, ask questions, and consider what you would like support with. You do not need to arrive with everything figured out." },
-  { question: "Do you offer in-person and online sessions?", answer: "Ask the practice about current in-person or telehealth availability and any client-location requirements." },
+  { question: "Do you offer in-person and online sessions?", answer: "Sessions are available in person at the Santa Monica office and through secure telehealth for clients located in California." },
   { question: "What if I am nervous about starting therapy?", answer: "Feeling unsure is understandable. You can begin with a conversation, ask about the process, and decide whether it feels like a good fit. There is no expectation to share more than you are ready to share." },
-  { question: "What therapy approaches do you use?", answer: "Approaches depend on the clinician and your goals. Ask the practice which services and methods are currently offered and whether they may fit your needs." },
+  { question: "What therapy approaches do you use?", answer: "Therapy may include Cognitive Behavioral Therapy (CBT), Eye Movement Desensitization and Reprocessing (EMDR), mindfulness-based practices, and body-oriented techniques. The approach is guided by your needs and goals." },
 ];
 
 import { SectionTitle } from "./MayaPrimitives";

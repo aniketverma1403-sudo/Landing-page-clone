@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { officeDirectionsUrl } from "./mayaData";
 
 const navigationLinks = [
@@ -9,6 +12,8 @@ const navigationLinks = [
 ];
 
 export default function MayaHeader() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <>
       <div className="bg-[#34483B] px-4 py-2 text-center text-[11px] tracking-[0.08em] text-[#F8F5ED] sm:text-xs">
@@ -33,28 +38,38 @@ export default function MayaHeader() {
           </nav>
 
           <div className="col-start-2 flex shrink-0 items-center gap-3 lg:col-start-3 lg:justify-self-end">
-            <details className="group relative lg:hidden">
-              <summary
-                aria-label="Toggle navigation menu"
+            <div className="group relative lg:hidden">
+              <button
+                type="button"
+                aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
                 aria-controls="maya-mobile-navigation"
-                className="flex h-10 w-10 cursor-pointer list-none flex-col items-center justify-center gap-1.25 rounded-full border border-[#D9DDD1] text-[#34483B] transition hover:bg-[#E2E8DC] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A65F48] [&::-webkit-details-marker]:hidden"
+                aria-expanded={isMenuOpen}
+                onClick={() => setIsMenuOpen((open) => !open)}
+                className="flex h-10 w-10 flex-col items-center justify-center gap-1.25 rounded-full border border-[#D9DDD1] text-[#34483B] transition hover:bg-[#E2E8DC] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A65F48]"
               >
-                <span className="block h-0.5 w-4.5 rounded-full bg-current transition duration-200 group-open:translate-y-1.75 group-open:rotate-45" />
-                <span className="block h-0.5 w-4.5 rounded-full bg-current transition duration-200 group-open:opacity-0" />
-                <span className="block h-0.5 w-4.5 rounded-full bg-current transition duration-200 group-open:-translate-y-1.75 group-open:-rotate-45" />
-              </summary>
-              <nav
-                id="maya-mobile-navigation"
-                aria-label="Mobile navigation"
-                className="absolute right-0 top-[calc(100%+0.85rem)] z-50 w-64 overflow-hidden rounded-2xl border border-[#E5E1D7] bg-[#F8F5ED] p-2 shadow-[0_20px_50px_-25px_rgba(52,72,59,0.35)]"
-              >
-                {navigationLinks.map((link) => (
-                  <a key={link.href} className="block rounded-xl px-4 py-3 text-sm text-[#34483B] transition hover:bg-[#E2E8DC]" href={link.href}>
-                    {link.label}
-                  </a>
-                ))}
-              </nav>
-            </details>
+                <span className={`block h-0.5 w-4.5 rounded-full bg-current transition duration-200 ${isMenuOpen ? "translate-y-1.75 rotate-45" : ""}`} />
+                <span className={`block h-0.5 w-4.5 rounded-full bg-current transition duration-200 ${isMenuOpen ? "opacity-0" : ""}`} />
+                <span className={`block h-0.5 w-4.5 rounded-full bg-current transition duration-200 ${isMenuOpen ? "-translate-y-1.75 -rotate-45" : ""}`} />
+              </button>
+              {isMenuOpen && (
+                <nav
+                  id="maya-mobile-navigation"
+                  aria-label="Mobile navigation"
+                  className="absolute right-0 top-[calc(100%+0.85rem)] z-50 w-64 overflow-hidden rounded-2xl border border-[#E5E1D7] bg-[#F8F5ED] p-2 shadow-[0_20px_50px_-25px_rgba(52,72,59,0.35)]"
+                >
+                  {navigationLinks.map((link) => (
+                    <a
+                      key={link.href}
+                      className="block rounded-xl px-4 py-3 text-sm text-[#34483B] transition hover:bg-[#E2E8DC]"
+                      href={link.href}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {link.label}
+                    </a>
+                  ))}
+                </nav>
+              )}
+            </div>
             <a
               href={officeDirectionsUrl}
               target="_blank"

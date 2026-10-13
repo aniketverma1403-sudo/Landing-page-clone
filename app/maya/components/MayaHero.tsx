@@ -29,7 +29,8 @@ export default function MayaHero() {
             </div>
             <div className="mt-8 flex flex-wrap gap-x-5 gap-y-2 border-t border-[#E5E1D7] pt-5 text-xs leading-5 text-[#687466] sm:text-sm">
               <span className="inline-flex items-center gap-2"><span aria-hidden="true" className="text-[#A65F48]">✳</span> Collaborative, personal care</span>
-              <span className="inline-flex items-center gap-2"><span aria-hidden="true" className="text-[#A65F48]">✳</span> Ask about session options</span>
+              <span className="inline-flex items-center gap-2"><span aria-hidden="true" className="text-[#A65F48]">✳</span> In person in Santa Monica</span>
+              <span className="inline-flex items-center gap-2"><span aria-hidden="true" className="text-[#A65F48]">✳</span> Secure telehealth across California</span>
             </div>
           </div>
           <div className="relative mx-auto w-full max-w-124 lg:ml-auto">
